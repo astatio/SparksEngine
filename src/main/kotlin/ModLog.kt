@@ -3,7 +3,6 @@ import com.mongodb.client.model.Filters.eq
 import com.mongodb.client.model.UpdateOptions
 import com.mongodb.client.model.Updates
 import com.mongodb.client.model.Updates.setOnInsert
-import commands.EntryController
 import commands.core.Alerts
 import commands.core.sendAlert
 import dev.minn.jda.ktx.coroutines.await
@@ -492,9 +491,6 @@ object ModLog {
                 }
 
                 // Kicked members need to be added to the EntryController in order to be considered returning members.
-                if (event.guild.idLong == 81384788765712384L) {
-                    EntryController.addToDatabase(member.idLong, guildId)
-                }
                 val channel: TextChannel = getChannel(1, guildId)?.let { channelID ->
                     event.guild.getTextChannelById(channelID) ?: run {
                         invalidChannelFound(1, channelID, event.guild)
@@ -511,10 +507,6 @@ object ModLog {
             ActionType.UNBAN -> {
                 val user = event.jda.retrieveUserById(targetID).await()
                 //Unbanned users are meant to become members again, so they should be added to Returning Members.
-                if (event.guild.idLong == 81384788765712384L) {
-                    EntryController.addToDatabase(user.idLong, guildId)
-                }
-
                 val emb = embedBuilder(null, user) {
                     title = "User Unbanned"
                     description =

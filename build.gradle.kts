@@ -69,19 +69,3 @@ dependencies {
 kotlin {
     jvmToolchain(21)
 }
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-            groupId = "com.astatio"
-            artifactId = "sparksengine"
-            version = "0.0.4"
-        }
-    }
-    repositories {
-        maven {
-            url = uri("$buildDir/repo")
-        }
-    }
-}

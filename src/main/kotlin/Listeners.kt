@@ -33,9 +33,6 @@ object Listeners {
         guildCommands = gldCommands
         buttonInteractions = bttnInteractions
 
-        jda.listener<GuildMemberJoinEvent> {
-            EntryController.runEntryController(it)
-        }
         jda.listener<MessageReceivedEvent> {
             // checks if the message comes from an allowed channel
             if (it.author.isBot) {
@@ -62,9 +59,6 @@ object Listeners {
         }
         jda.listener<GuildMemberJoinEvent> {
             Ranks.onMemberJoin(it)
-        }
-        jda.listener<GuildMemberRoleAddEvent> {
-            EntryController.onGuildMemberRoleAdd(it)
         }
         jda.listener<SlashCommandInteractionEvent> {
             slashCommands.onSlashCommandInteraction(it)

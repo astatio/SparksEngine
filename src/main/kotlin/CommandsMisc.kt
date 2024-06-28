@@ -51,3 +51,4 @@ object CommandsMisc : ListenerAdapter() {
         Experiments.status = !Experiments.status
         event.channel.sendMessage("Experiments are now ${if (Experiments.status) "on" else "off"}").queue()
     }
+}
