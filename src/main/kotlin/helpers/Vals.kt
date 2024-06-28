@@ -93,7 +93,7 @@ var spamPrevention = false
  */
 var owners = arrayOf()
 
-val OMDB_KEY = System.getenv("OMDB_KEY") ?: logger.error {"The OMDB_KEY environment variable is not set. The OMDB API will not be available.}
+val OMDB_KEY = System.getenv("OMDB_KEY") ?: logger.error {"The OMDB_KEY environment variable is not set. The OMDB API will not be available."}
 
 internal var databaseWriteAttempts = 0
 
