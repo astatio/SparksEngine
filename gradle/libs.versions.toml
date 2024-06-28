@@ -1,0 +1,60 @@
+[versions]
+kotlinxCoroutinesCore = "1.8.1"
+kotlinxSerializationCore = "1.6.3"
+kotlin = "2.0.0"
+kotlinScripting = "2.0.0"
+facebookKtfmt = "0.50"
+json = "20240303"
+stacktraceDecoroutinator = "2.3.9"
+debattyStringSimilarity = "2.0.0"
+apacheCommonsRng = "1.5"
+imgscalr = "4.2"
+mongodbDriver = "5.1.1"
+discordWebhooks = "0.8.4"
+jdaKtx = "78dbf82"
+ocpsoftPrettytime = "5.0.8.Final"
+kotlinxDatetime = "0.6.0"
+oshi = "6.6.1"
+logbackClassic = "1.5.6" # DO NOT UPGRADE THIS EVER AGAIN!! 1.4.14
+kotlinLogging = "6.0.9"
+slf4j = "2.0.13"
+jansi = "2.4.1"
+jda = "5.0.0-beta.24"
+shadow = "8.1.1"
+ktor = "3.0.0-beta-1"
+
+[plugins]
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+
+[libraries]
+kotlin-scripting-jsr223 = { module = "org.jetbrains.kotlin:kotlin-scripting-jsr223", version.ref = "kotlinScripting" }
+facebook-ktfmt = { module = "com.facebook:ktfmt", version.ref = "facebookKtfmt" }
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerializationCore" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationCore" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-json = { module = "io.ktor:ktor-client-json", version.ref = "ktor" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+json-json = { module = "org.json:json", version.ref = "json" }
+reformator-stacktrace-decoroutinator= { module = "dev.reformator.stacktracedecoroutinator:stacktrace-decoroutinator-jvm", version.ref = "stacktraceDecoroutinator" }
+debatty-java-string-similarity = { module = "info.debatty:java-string-similarity", version.ref = "debattyStringSimilarity" }
+apache-commons-rng-simple = { module = "org.apache.commons:commons-rng-simple", version.ref = "apacheCommonsRng" }
+apache-commons-rng-sampling = { module = "org.apache.commons:commons-rng-sampling", version.ref = "apacheCommonsRng" }
+imgscalr = { module = "org.imgscalr:imgscalr-lib", version.ref = "imgscalr" }
+mongodb-driver-kotlin = { module = "org.mongodb:mongodb-driver-kotlin-coroutine", version.ref = "mongodbDriver" }
+minn-discord-webhooks = { module = "club.minnced:discord-webhooks", version.ref = "discordWebhooks" }
+minn-jda-ktx = { module = "io.github.minndevelopment:jda-ktx", version.ref = "jdaKtx" }
+ocpsoft-prettytime = { module = "org.ocpsoft.prettytime:prettytime", version.ref = "ocpsoftPrettytime" }
+ocpsoft-prettytime-nlp = { module = "org.ocpsoft.prettytime:prettytime-nlp", version.ref = "ocpsoftPrettytime" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+oshi-core = { module = "com.github.oshi:oshi-core", version.ref = "oshi" } # System info
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logbackClassic" } # DO NOT UPGRADE THIS EVER AGAIN!!
+kotlin-logging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlinLogging" }
+jansi = { module = "org.fusesource.jansi:jansi", version.ref = "jansi" } # For colored console output
+jda = { module = "net.dv8tion:JDA", version.ref = "jda" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
