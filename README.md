@@ -1,6 +1,10 @@
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/astatio/SparksEngine) [![](https://jitpack.io/v/astatio/SparksEngine.svg)](https://jitpack.io/#astatio/SparksEngine) ![GitHub top language](https://img.shields.io/github/languages/top/astatio/SparksEngine?logo=kotlin&color=7F52FF) ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/astatio/SparksEngine) ![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/astatio/SparksEngine) ![Code Climate issues](https://img.shields.io/codeclimate/issues/astatio/SparksEngine)
+
 
 > [!WARNING]
 > At the moment, you might be unable to use this project. This is due to the project being made public before the author could finish working on a feature which, due to an oversight, was being developed on the main branch.
+
+https://github.com/astatio/SparksEngine
 
 # SparksEngine
 SparksEngine is the core of the Discord bot DigitalSparks - It's what makes it work - and it's used exactly the same way it's provided here: just like a library. It provides all the tools you need to get started with a bot of your own. Make sure to check the wiki for more information.
