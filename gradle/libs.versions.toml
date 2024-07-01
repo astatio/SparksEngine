@@ -1,6 +1,6 @@
 [versions]
 kotlinxCoroutinesCore = "1.8.1"
-kotlinxSerializationCore = "1.6.3"
+kotlinxSerializationCore = "1.7.1"
 kotlin = "2.0.0"
 kotlinScripting = "2.0.0"
 facebookKtfmt = "0.50"
