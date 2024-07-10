@@ -17,4 +17,4 @@ SparksEngine exposes a lot of the libraries it uses but not for logging. This is
 Features are made according to a defined priority basis. The moment this repository turns public, these features will be of high priority.
 
 ## The bot seems to censor some words in ModLogs
-This happens due to liability in community guilds. Even if in the message sent by the bot is written that it was sent by someone else, what matters is that the bot is the one sending them right now. Some words can mean trouble for those guilds, and having a bot approved by the admins saying them is not very desirable. The bot is currently not designed to have this featured turned off or on, but, in the future that will be an option for the library users.
+This happens due to liability in community guilds - however, I do understand that It's implemented very poorly. In the future, SparksEngine should feature an interface for this and allow customization. 
