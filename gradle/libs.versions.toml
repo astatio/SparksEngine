@@ -1,8 +1,8 @@
 [versions]
 kotlinxCoroutinesCore = "1.8.1"
 kotlinxSerializationCore = "1.7.1"
-kotlin = "2.0.10"
-kotlinScripting = "2.0.10"
+kotlin = "2.2.0"
+kotlinScripting = "2.2.0"
 facebookKtfmt = "0.51"
 json = "20240303"
 stacktraceDecoroutinator = "2.3.9"
