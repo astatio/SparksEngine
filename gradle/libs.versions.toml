@@ -19,7 +19,7 @@ logbackClassic = "1.5.7" # DO NOT UPGRADE THIS EVER AGAIN!! 1.4.14
 kotlinLogging = "7.0.0"
 slf4j = "2.0.17"
 jansi = "2.4.1"
-jda = "5.0.0"
+jda = "5.1.2"
 shadow = "8.1.1"
 ktor = "3.0.0"
 
